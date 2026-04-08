@@ -1,4 +1,4 @@
-.container img {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,4 +17,9 @@
   flex-direction: column;
   background-color: rgb(226, 195, 195);
   width: 25%;
+}
+
+.foto:hover{
+    width: 205px;
+    transition: ease-in 0.3s;
 }
