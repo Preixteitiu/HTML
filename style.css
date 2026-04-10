@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    /* TAMANHO */
+    width: 400px;
+    /* COR DE FUNDO */
+    background-color: white;
+    /* MARGEM */
+    margin: 30px auto;
+    /* ESPAÇO INTERNO */
+    padding: 20px;
+    /* ARRENDONDAR BORDAS */
+    border-radius: 10px;
+}
+
+h2 {
+    /* COLOCAR TEXTO NO CENTRO */
+    text-align: center;
+    color: #1d4ed8;
+    font-weight: bold;
+}
+
+label {
+    /* MARGEM EM CIMA*/
+    margin-top: 12px;
+    /* MARGEM EMBAIXO */
+    margin-bottom: 5px;
+    /* FONTE EM NEGRITO */
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    /* BORDAS  */
+    border: 1px solid #cccc;
+    /* NÃO DEIXA QUE O TAMANHO ULTRAPASSE A LARGURA DEFINIDA */
+    box-sizing: border-box;
+}
+
+textarea {
+    /* NÃO DEIXA O USUÁRIO AUMENTAR O TAMANHO DO TEXT AREA */
+    resize: none;
+}
+
+.grupo-opcoes input {
+    width: auto;
+}
+
+.grupo-opcoes label {
+    /* DEIXA NA MESMA LINHA QUE OS INPUTS */
+    display: inline;
+    /* MARGEM PARA ESQUERDA */
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+
+button {
+
+    /* O PRIMEIRO 15PX É O ESPAÇAMENTO INTERNO DE CIMA E DE BAIXO, O SEGUNDO É O ESPAÇAMENTO 
+    INTERNO PARA AS LATERAIS */
+    padding: 15px 15px;
+    /* REMOVE AS BORDAS */
+    border: none;
+    /* ARREDONDAMENTO DAS BORDAS */
+    border-radius: 6px;
+    /* COR DE FUNDO DO BOTÃO */
+    background-color: #2563eb;
+    /* QUANDO PASSA O MOUSE, O MOUSE MUDA O ICONE PARA A MÃOZINHA */
+    cursor: pointer;
+    /* ESPAÇAMENTO PARA DIREITA */
+    margin-right: 10px;
+
+    font-weight: bold;
+    color: #fff;
+
+}
+
+button[type='reset'] {
+    background-color: #f97316;
+}
