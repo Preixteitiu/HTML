@@ -1,73 +1,73 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
 }
 
 .container {
-  /* TAMANHO */
-  width: 400px;
-  /* COR DE FUNDO */
-  background-color: white;
-  /* MARGEM */
-  margin: 30px auto;
-  /* ESPAÇO INTERNO */
-  padding: 20px;
-  /* ARRENDONDAR BORDAS */
-  border-radius: 10px;
+    /* TAMANHO */
+    width: 400px;
+    /* COR DE FUNDO */
+    background-color: white;
+    /* MARGEM */
+    margin: 30px auto;
+    /* ESPAÇO INTERNO */
+    padding: 20px;
+    /* ARRENDONDAR BORDAS */
+    border-radius: 10px;
 }
 
-h2{
-  /* COLOCAR TEXTO NO CENTRO */
-  text-align: center;
-  color: #1d4ed8;
-  font-weight: bold;
+h2 {
+    /* COLOCAR TEXTO NO CENTRO */
+    text-align: center;
+    color: #1d4ed8;
+    font-weight: bold;
 }
 
-label{
-  /* MARGEM EM CIMA*/
-  margin-top: 12px;
-  /* MARGEM EMBAIXO */
-  margin-bottom: 5px;
-  /* FONTE EM NEGRITO */
-  font-weight: bold;
+label {
+    /* MARGEM EM CIMA*/
+    margin-top: 12px;
+    /* MARGEM EMBAIXO */
+    margin-bottom: 5px;
+    /* FONTE EM NEGRITO */
+    font-weight: bold;
 }
 
 input,
-textarea{
-  width: 100%;
-  padding: 10px;
-  /* BORDAS  */
-  border: 1px solid #cccc;
-  /* NÃO DEIXA QUE O TAMANHO ULTRAPASSE A LARGURA DEFINIDA */
-  box-sizing: border-box;
+textarea {
+    width: 100%;
+    padding: 10px;
+    /* BORDAS  */
+    border: 1px solid #cccc;
+    /* NÃO DEIXA QUE O TAMANHO ULTRAPASSE A LARGURA DEFINIDA */
+    box-sizing: border-box;
 }
 
-textarea{
-  /* NÃO DEIXA O USUÁRIO AUMENTAR O TAMANHO DO TEXT AREA */
-  resize: none;
+textarea {
+    /* NÃO DEIXA O USUÁRIO AUMENTAR O TAMANHO DO TEXT AREA */
+    resize: none;
 }
 
-.grupo-opcoes{
-  width: auto;
+.grupo-opcoes input {
+    width: auto;
 }
 
-.grupo-opcoes label{
-  display: left;
+.grupo-opcoes label {
+  display: inline;
   margin-left: 5px;
   font-weight: bold;
 }
 
-button{
-    padding: 15px;
-    border: none;
-    border-radius: 6px;
-    background-color: #2563eb;
-    cursor: pointer;
-    margin-right: 10px;
-    font-weight: bold;
-    color: #fff;
+button {
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #fff;
 }
 
-button[type = reset] {
-    background-color: #f97316;
+button[type="reset"] {
+  background-color: #f97316;
 }
