@@ -1,0 +1,49 @@
+* {
+  /*margens*/
+  margin: 0;
+  /*ecpaçamento interno*/
+  padding: 0;
+  /* Ajuda a calcular melhor os espaçamentos e tamanhos */
+  box-sizing: border-box;
+}
+
+body{
+    
+    background-color: rgb(229, 215, 241);
+    /* muda o fundo da pagina */
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+.galeria{
+    /* deixa tudo da galeria flexivel */
+    display: flex;
+    /* Vai quebrar a linha inferior caso passe do limite da tela */
+    flex-wrap: wrap;
+    /* centraliza os itens da galeria */
+    justify-content: center;
+    /* cria uma divisão entre as imagens */
+    gap: 7px;
+}
+
+.galeria img{
+    /* Largura */
+    width: 200px;
+    /* altura */
+    height: 200px;
+
+    /* arredondar as bordas */
+    border-radius: 10px;
+    /* Coloca a maozinha quando passa o mouse */
+    cursor: pointer;
+    /* Tempo para executar o hover (animação ao passar o mouse sobre a imagem) */
+    transition: 0.4s;
+}
+
+.galeria img:hover {
+    /* aumenta o tamando da imagem em 1,05 */
+    transform: scale(1.03);
+}
