@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: beige;
+}
+
+.menu {
+  background-color: bisque;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  padding: 15px 40px;
+
+  display: flex;
+  /* espaçi entre eles */
+  justify-content: space-between;
+  /* alinha tudo no meio dos espaço disponível */
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 14px;
+}
+
+.links a {
+    color: rgb(158, 39, 39);
+    /* remover sublinhado da tag A do HTML */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links a:hover {
+    color: chocolate;
+}
+
+.botao {
+    background-color: chocolate;
+    color: beige;
+    padding: 10px 14px;
+    border: none;
+}
