@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+body{
+    background-color: rgb(48, 42, 102);
+}
+
+.menu{
+    background-color: black;
+    border-radius: 5px;
+    color: black;
+    padding: 15px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    gap: 30px;
+    
+}
+
+.links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.45s;
+    
+}
+
+
+.links a:hover{
+    color: rgb(165, 95, 231);
+    transform: (scale 1.05);
+    font-size: 19px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
