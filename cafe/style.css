@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: brown;
+    padding: 20px 0;
+}
+
+.topo{
+    background-color: rgb(202, 101, 101);
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bolder;
+}
+
+.hero{
+    /* background-color: red; */
+    width: 50%;
+}
+
+.hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text{
+    background-color: rgb(202, 101, 101);
+}
+
+.hero-text h2{
+    color: black;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    color: black;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
