@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Gerador de curriculo</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <section id="secao-formulario">
+        <h2>preencha seus dados</h2>
+
+        <form id="formulario-curriculo">
+          <div class="grupo-campo">
+
+            <label for="entradaNome">Nome Completo</label>
+            <input type="text" id="entradaNome" placeholder="Ex: Igor Silva" required>
+            
+          </div>
+          
+          <div class="grupo-campo">
+
+            <label for="entradaContato">Contato</label>
+            <input type="text" id="entradaContato" placeholder="Ex: Telefone/E-mail" required>
+
+          </div>
+          
+          <div class="grupo-campo">
+
+            <label for="entradaResumo">Resumo Profissional</label>
+            <input type="text" id="entradaResumo" placeholder="Ex: Breve resumo sobre sua carreira" required>
+
+          </div>
+          
+          <div class="grupo-campo">
+
+            <label for="experienciaProfissional">Experiência Profissional</label>
+            <input type="text" id="entradaExperiencia" placeholder="Ex: Empresa - Cargo - Data início - Data saída" required>
+
+          </div>
+          
+          <div class="grupo-campo">
+
+            <label for="entradaFormacao">Formação Acadêmica </label>
+            <input type="text" id="entradaFormacao" placeholder="Ex: Instituição - Curso (ano de conclusão)" required>
+
+          </div>
+
+          <button tipe="button" id="botaoGerar">Gerar Curriculo</button>
+          
+        </form>
+      </section>
+
+      <section id="secao-curriculo" id="escondido">
+        <div class="cartao-curriculo">
+            <div class="cabecalho-curriculo">
+                <h1 id="curriculoNome"></h1>
+                <p id="curriculoContato"></p>
+            </div>
+        </div>
+        
+      </section>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
