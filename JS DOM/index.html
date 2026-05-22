@@ -1,69 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <title>Gerador de curriculo</title>
-  </head>
 
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Curriculo</title>
+</head>
+
+<body>
     <div class="container">
-      <section id="secao-formulario">
-        <h2>preencha seus dados</h2>
+        <section id="secao-formulario">
+            <h2>Preencha seus dados</h2>
 
-        <form id="formulario-curriculo">
-          <div class="grupo-campo">
+            <form id="forumlario-curriculo">
+                <div class="grupo-campo">
+                    <label for="entradaNome">Nome Completo</label>
+                    <input type="text" id="entradaNome" placeholder="Ex: Igor Silva" required>
+                </div>
 
-            <label for="entradaNome">Nome Completo</label>
-            <input type="text" id="entradaNome" placeholder="Ex: Igor Silva" required>
-            
-          </div>
-          
-          <div class="grupo-campo">
+                <div class="grupo-campo">
+                    <label for="entradaContato">Contato</label>
+                    <input type="text" id="entradaContato" placeholder="Ex: email@email 61 999-9999 Brasília - DF"
+                        required>
+                </div>
 
-            <label for="entradaContato">Contato</label>
-            <input type="text" id="entradaContato" placeholder="Ex: Telefone/E-mail" required>
+                <div class="grupo-campo">
+                    <label for="entradaResumo">Resumo Profissional</label>
+                    <textarea id="entradaResumo" placeholder="Ex: Breve resumo sobre sua carreira"></textarea>
+                </div>
 
-          </div>
-          
-          <div class="grupo-campo">
+                <div class="grupo-campo">
+                    <label for="entradaExperiencia">Experiência Profissional</label>
+                    <textarea id="entradaExperiencia" placeholder="Ex: Empresa - Cargo - Data inicio - Data fim"></textarea>
+                </div>
 
-            <label for="entradaResumo">Resumo Profissional</label>
-            <input type="text" id="entradaResumo" placeholder="Ex: Breve resumo sobre sua carreira" required>
+                <div class="grupo-campo">
+                    <label for="entradaFormacao">Formação Acadêmica</label>
+                    <textarea id="entradaFormacao" placeholder="Ex: Instituição - Curso - (ano de conclusão)"></textarea>
+                </div>
 
-          </div>
-          
-          <div class="grupo-campo">
+                <button type="button" id="botaoGerar">Gerar Currículo</button>
+            </form>
+        </section>
 
-            <label for="experienciaProfissional">Experiência Profissional</label>
-            <input type="text" id="entradaExperiencia" placeholder="Ex: Empresa - Cargo - Data início - Data saída" required>
+        <section id="secao-curriculo" class="escondido">
+            <div class="cartao-curriculo">
 
-          </div>
-          
-          <div class="grupo-campo">
+                <div class="cabecalho-curriculo">
+                    <h1 id="curriculoNome"></h1>
+                    <p id="curriculoContato"></p>
+                </div>
 
-            <label for="entradaFormacao">Formação Acadêmica </label>
-            <input type="text" id="entradaFormacao" placeholder="Ex: Instituição - Curso (ano de conclusão)" required>
+                <div class="corpo-curriculo">
 
-          </div>
+                    <div class="bloco-curriculo">
+                        <h3>Sobre Mim</h3>
+                        <p id="curriculoResumo"></p>
+                    </div>
 
-          <button tipe="button" id="botaoGerar">Gerar Curriculo</button>
-          
-        </form>
-      </section>
+                    <div class="bloco-curriculo">
+                        <h3>Experiência Profissional</h3>
+                        <p id="curriculoExperiencia"></p>
+                    </div>
 
-      <section id="secao-curriculo" id="escondido">
-        <div class="cartao-curriculo">
-            <div class="cabecalho-curriculo">
-                <h1 id="curriculoNome"></h1>
-                <p id="curriculoContato"></p>
+                    <div class="bloco-curriculo">
+                        <h3>Formação Acadêmica</h3>
+                        <p id="curriculoFormacao"></p>
+                    </div>
+                    
+                </div>
             </div>
-        </div>
-        
-      </section>
+        </section>
     </div>
-  </body>
-  <script src="script.js"></script>
+</body>
+<script src="script"></script>
+
 </html>
