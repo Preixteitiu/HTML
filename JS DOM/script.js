@@ -14,10 +14,18 @@ document.addEventListener('DOMContentLoaded', () =>{
         const resumo = document.getElementById('entradaResumo').value
         const experiencia = document.getElementById('entradaExpericencia').value
         const formacao = document.getElementById('entradaFormacao').value
-
+        //verifica se os campos foram preenshidos, se não, manda mensagem de erro
         if(!nome || !contato || !resumo || experiencia || formacao){
             alert('Preencha todos os campos')
             return
         }
+
+        //mandar dados recebidos para a pagina de curriculo
+
+        document.getElementById('curriculoNome').textContent = nome
+        document.getElementById('curriculoContato').textContent = contato
+        document.getElementById('curriculoResumo').textContent = resumo
+        document.getElementById('curriculoExperiencia').textContent = experiencia
+        document.getElementById('curriculoFormacao').textContent = formacao
     })
 })
